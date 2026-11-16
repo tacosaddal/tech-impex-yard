@@ -1,0 +1,35 @@
+<div id="app" class="is-intro">
+<canvas id="gl" role="img" aria-label="A 3D container yard with ten bays. Drive the forklift between them."></canvas>
+<div class="tilt tilt--t" aria-hidden="true"></div><div class="tilt tilt--b" aria-hidden="true"></div>
+<div class="labels" id="labels" aria-hidden="true"></div>
+
+<header class="top wrap">
+  <button class="logo pn" id="home" type="button" aria-label="Drive back to the gatehouse">
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l13-6 13 6v12l-13 6-13-6V11z"/><path d="M3 11l13 6 13-6M16 17v12M9.5 8l13 6"/></svg>
+    <span data-studio>Tech Impex</span>
+  </button>
+  <div class="count pn mono"><span id="cnt" aria-live="polite">0 / 10 bays</span><span class="pips" id="pips" aria-hidden="true"></span></div>
+  <button class="tb pn mono" id="listb" type="button">Manifest</button>
+  <button class="tb pn mono" id="snd" type="button" aria-pressed="false">Sound off</button>
+</header>
+
+<aside class="card pn" id="card" aria-live="polite"></aside>
+<p class="hint pn mono" id="hint">Arrow keys or WASD to drive &nbsp;/&nbsp; click anywhere to go there &nbsp;/&nbsp; scroll to zoom</p>
+<nav class="dock pn" id="dock" aria-label="Bays"></nav>
+<div class="toast pn mono" id="toast" role="status"></div>
+
+<section class="intro" id="intro">
+  <div class="wrap intro__in">
+    <p class="mono"><span data-studio>Tech Impex</span> &nbsp;/&nbsp; software house</p>
+    <h1 class="x">Ideas in.<br><em>Software out.</em></h1>
+    <p class="lead">Welcome to the yard. Ten bays, ten things we build, all ready to ship: games, AR, VR, business systems and apps. Take the forklift and have a look around.</p>
+    <div class="row">
+      <button class="btn" id="go" type="button">Start driving</button>
+      <button class="btn btn--o" id="go2" type="button">Just show me the list</button>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="list" role="dialog" aria-modal="true" aria-labelledby="list-h"><div class="sheet__p pn" id="listp"></div></section>
+<section class="sheet" id="done" role="dialog" aria-modal="true" aria-labelledby="done-h"><div class="sheet__p pn" id="donep" style="width:min(660px,100%)"></div></section>
+</div>
